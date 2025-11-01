@@ -5,8 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+  <link rel="stylesheet" href="./styles.css">
   <title>Frontend Mentor | Intro component with sign up form</title>
+  
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
@@ -17,7 +18,7 @@
 <body>
   <main class="signup-page">
     <section class="signup__text">
-      <h4> Learn to code by watching others</h4>
+      <h2> Learn to code by watching others</h2>
       <p>
         See how experienced developers solve problems in real-time. Watching scripted tutorials is great, 
         but understanding how developers think is invaluable. 
@@ -25,25 +26,25 @@
    </section>
    <section class="singup__form">
      <div class="singup__discount">
-       <p><span class="bold">Try it free 7 days</span> then $20/mo. thereafter</p>
+       <p><span class="bold">Try it free 7 days <br> </span> then $20/mo. thereafter</p>
      </div>
-     <form action="">
-       <input type="text" placeholder="First Name" required>
-       <input type="text" placeholder="Last Name" required>
-       <input type="email" placeholder="Email Address" required>
-       <input type="password" placeholder="Password" required>
-       <button>CLAIM YOUR FREE TRIAL</button>
-       <p>By clicking the button, you are agreeing to our <span class="terms">Terms and Services</span></p>
+     <form action="" id="form" type="submit" >
+       <input class="form__field" type="text" placeholder="First Name" id="firstName" required>
+       <input class="form__field" type="text" placeholder="Last Name" id="lastName" required>
+       <input class="form__field" type="email" placeholder="Email Address" id="email" required>
+       <input  class="form__field" type="password" placeholder="Password" id="password" required>
+       <button type="submit" id="submitbutton">CLAIM YOUR FREE TRIAL</button>
+       <p class="terms-conditions">By clicking the button, you are agreeing to our <span class="terms">Terms and Services</span></p>
      </form>
 
    </section>
 
   </main>
-<footer>
+<!-- <footer>
     <p class="attribution">
       Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
       Coded by <a href="#">Your Name Here</a>.
     </p>
-  </footer>
-</body>
+  </footer> -->
+  <script src="index.js" type="module"></script>
 </html>
